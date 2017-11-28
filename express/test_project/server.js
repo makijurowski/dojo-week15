@@ -2,15 +2,16 @@
 
 var express = require("express");
 var app = express();
+var path = require("path");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 
-app.use(express.static(__dirname + "/static"));
+app.use(express.static(path.join(__dirname + "/static")));
 console.log(__dirname);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({secret: 'encryptionstring'}));
 
-app.set('views', __dirname + '/views');
+app.set('views', path.join(__dirname + '/views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {

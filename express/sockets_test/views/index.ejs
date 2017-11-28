@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>My App</title>
+        <script type ="text/javascript" src="jquery/dist/jquery.js"></script>
+        <script type ="text/javascript" src="socket.io/socket.io.js"></script>
+        <script type ="text/javascript">
+            $(document).ready(() => {
+                console.log("jquery Works!");
+                const socket = io.connect();
+                $("button").click(() => {
+                    socket.emit("click")
+                });
+                socket.on("date", (new_date) => {
+                    $("#anything").text(new_date);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h3>Sockets Test</h3>
+        <button>I AM A BUTTON</button>
+        <div id="anything"></div>
+    </body>
+</html>

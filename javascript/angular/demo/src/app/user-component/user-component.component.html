@@ -1,0 +1,20 @@
+<h1>Users</h1>
+
+<h3>{{ my_name }}</h3>
+
+<ul>
+  <li *ngFor="let other of other_names">{{ other | json }}</li>
+</ul>
+
+<table>
+  <tr>
+    <th>Important?</th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let other of other_names">
+    <td><span *ngIf="other.important">!!!</span></td>
+    <td>{{ other.first_name }} {{ other.last_name }}</td>
+    <td>{{ other.email }}</td>
+  </tr>
+</table>

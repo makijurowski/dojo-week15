@@ -18,4 +18,12 @@ export class UserComponentComponent implements OnInit {
                         {first_name: 'Mary', last_name: 'MaryMary', email: 'mary@mary.com', important: true},
                         {first_name: 'Jennifer', last_name: 'Feng', email: 'jen@jen.com', important: true}];
   }
+
+   button_function() {
+    console.log('Click');
+  }
+
+  button_function2() {
+    this.other_names.push({first_name: 'Nathan', last_name: 'James', email: 'nathan@nathan.com', important: false});
+  }
 }

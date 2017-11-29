@@ -15,6 +15,6 @@
   <tr *ngFor="let other of other_names">
     <td><span *ngIf="other.important">!!!</span></td>
     <td>{{ other.first_name }} {{ other.last_name }}</td>
-    <td>{{ other.email }}</td>
+    <td>{{ other.email | uppercase }}</td>
   </tr>
 </table>

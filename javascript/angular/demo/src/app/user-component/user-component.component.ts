@@ -18,5 +18,4 @@ export class UserComponentComponent implements OnInit {
                         {first_name: 'Mary', last_name: 'MaryMary', email: 'mary@mary.com', important: true},
                         {first_name: 'Jennifer', last_name: 'Feng', email: 'jen@jen.com', important: true}];
   }
-
 }

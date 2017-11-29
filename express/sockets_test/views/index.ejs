@@ -11,7 +11,10 @@
                     socket.emit("click")
                 });
                 socket.on("date", (new_date) => {
-                    $("#anything").text(new_date);
+                    $("#date").text(new_date);
+                });
+                socket.on("count", (current_count) => {
+                    $("#count").text(current_count);
                 });
             });
         </script>
@@ -19,6 +22,7 @@
     <body>
         <h3>Sockets Test</h3>
         <button>I AM A BUTTON</button>
-        <div id="anything"></div>
+        <div id="date"></div>
+        <div id="count"></div>
     </body>
 </html>

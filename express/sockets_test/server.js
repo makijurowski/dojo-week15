@@ -31,6 +31,6 @@ io.sockets.on("connection", (socket) => {
         clicker++;
         console.log(clicker);
         io.emit("date", new Date());
-        // io.emit("count", clicker);
+        io.emit("count", clicker);
     });
 });

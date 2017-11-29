@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+        <title>Github API Demo</title>
+        <script>
+            $(document).ready(() => {
+                $('#git-button').click(() => {
+                    $.get('https://api.github.com/users/makiroggers', displayName);
+                });
+                function displayName(data) {
+                    if (data.avatar_url) {
+                        $('#git-info').append(`<img src="` + data.avatar_url + `">`);
+                    }
+                    if (data.name) {
+                        $('#git-info').append("<p>USERNAME: " + data.name + "</p>");
+                    }
+                    if (data.location) {
+                        $('#git-info').append("<p>LOCATION: " + data.location + "</p>");
+                    }
+                    if (data.bio) {
+                        $('#git-info').append("<p>BIO: " + data.bio + "</p>");
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <button id="git-button">Click me!</button>
+        <div id="git-info"></div>
+    </body>
+</html>

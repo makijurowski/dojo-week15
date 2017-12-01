@@ -4,15 +4,15 @@
 // import * as rxjs from 'rxjs';
 // import observable from 'rxjs/observable';
 
-export class MyClass {
-  // TSLint syntax for variables
-  myStringMC: 'This is a string';
-  myNumberMC: 7;
-  myBooleanMC: true;
-  myNumArrayMC1: number[];
-  myNumArrayMC2: Array<number>;
-  anythingMC: any = 7;
-}
+// export class MyClass {
+//   // TSLint syntax for variables
+//   myStringMC: 'This is a string';
+//   myNumberMC: 7;
+//   myBooleanMC: true;
+//   myNumArrayMC1: number[];
+//   myNumArrayMC2: Array<number>;
+//   anythingMC: any = 7;
+// }
 
 // Platform syntax for variables
 // var myString = 'This is a string';
@@ -22,48 +22,48 @@ export class MyClass {
 // var myNumArray = Array<number>
 // var anything: any = 7;
 
-function testing() {
-  let x = 10;
-  console.log(x);
-  x = 20;
-}
+// function testing() {
+//   let x = 10;
+//   console.log(x);
+//   x = 20;
+// }
 
-if (true) {
-  const x = 10;
-  console.log(x);
-}
+// if (true) {
+//   const x = 10;
+//   console.log(x);
+// }
 
-const myobj = {
-  a: 1,
-  b: 2
-};
+// const myobj = {
+//   a: 1,
+//   b: 2
+// };
 
-myobj.a = 5;
+// myobj.a = 5;
 
-// Never type never reaches the end of a function
-function errorHandler(message: string): never {
-  throw new Error(message);
-}
+// // Never type never reaches the end of a function
+// function errorHandler(message: string): never {
+//   throw new Error(message);
+// }
 
-// Void returns nothing
-function printValue(val: string): void {
-  console.log(val);
-  return;
-}
+// // Void returns nothing
+// function printValue(val: string): void {
+//   console.log(val);
+//   return;
+// }
 
 // Class construction using TS
-class SLNode {
-  val: number;
+// class SLNode {
+//   val: number;
 
-  constructor(valueP: number) {
-    this.val = valueP;
-  }
-  doSomethingFun() {
-    console.log('This is fun!');
-  }
-}
+//   constructor(valueP: number) {
+//     this.val = valueP;
+//   }
+//   doSomethingFun() {
+//     console.log('This is fun!');
+//   }
+// }
 
-const firstSLNode = new SLNode(1);
+// const firstSLNode = new SLNode(1);
 
 // export { SampleClassA as NewClassName }; // Export a class with a different name.
 

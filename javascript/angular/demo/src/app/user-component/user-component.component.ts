@@ -1,29 +1,29 @@
-import { any } from 'codelyzer/util/function';
-import { Component, OnInit } from '@angular/core';
-import { User } from './user';
+// import { any } from 'codelyzer/util/function';
+// import { Component, OnInit } from '@angular/core';
+// import { User } from './user';
 
-@Component({
-  selector: 'app-user-component',
-  templateUrl: './user-component.component.html',
-  styleUrls: ['./user-component.component.css']
-})
-export class UserComponentComponent implements OnInit {
-  my_name: string;
-  other_names: Array<User>;
-  constructor() { }
+// @Component({
+//   selector: 'app-user-component',
+//   templateUrl: './user-component.component.html',
+//   styleUrls: ['./user-component.component.css']
+// })
+// export class UserComponentComponent implements OnInit {
+//   my_name: string;
+//   other_names: Array<User>;
+//   constructor() { }
 
-  ngOnInit() {
-    this.my_name = 'Maki';
-    this.other_names = [{first_name: 'Lizzie', last_name: 'Guiterrez', email: 'lizzie@lizzie.com', important: true},
-                        {first_name: 'Mary', last_name: 'MaryMary', email: 'mary@mary.com', important: true},
-                        {first_name: 'Jennifer', last_name: 'Feng', email: 'jen@jen.com', important: true}];
-  }
+//   ngOnInit() {
+//     this.my_name = 'Maki';
+//     this.other_names = [{first_name: 'Lizzie', last_name: 'Guiterrez', email: 'lizzie@lizzie.com', important: true},
+//                         {first_name: 'Mary', last_name: 'MaryMary', email: 'mary@mary.com', important: true},
+//                         {first_name: 'Jennifer', last_name: 'Feng', email: 'jen@jen.com', important: true}];
+//   }
 
-   button_function() {
-    console.log('Click');
-  }
+//    button_function() {
+//     console.log('Click');
+//   }
 
-  button_function2() {
-    this.other_names.push({first_name: 'Nathan', last_name: 'James', email: 'nathan@nathan.com', important: false});
-  }
-}
+//   button_function2() {
+//     this.other_names.push({first_name: 'Nathan', last_name: 'James', email: 'nathan@nathan.com', important: false});
+//   }
+// }

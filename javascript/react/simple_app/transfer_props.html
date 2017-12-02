@@ -37,6 +37,7 @@
                         <p>{this.props.color}</p>
                         <p>{this.props.num}</p>
                         <p>{this.props.size}</p>
+                        <p>{this.props.myid}</p>
                     </div>
                 );
             }
@@ -46,9 +47,7 @@
             render() {
                 var labelStyle = { };
                 return(
-                    <Display color={this.props.color}
-                    num={this.props.num}
-                    size={this.props.size}/>
+                    <Display {...this.props}/>
                 );
             }
         }
@@ -57,16 +56,14 @@
             render() {
                 var shirtStyle = { };
                 return(
-                    <Label color={this.props.color}
-                    num={this.props.num}
-                    size={this.props.size}/>
+                    <Label {...this.props}/>
                 );
             }
         }
 
         ReactDOM.render(
             <div>
-                <Shirt color="steelblue" num="3.14" size="medium"/>
+                <Shirt color="steelblue" num="3.14" size="medium" myid="unique"/>
             </div>,
             destination
         );

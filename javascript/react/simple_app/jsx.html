@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>More JSX</title>
@@ -11,11 +10,9 @@
         body {
             background-color: #EEE;
         }
-
         #container {
             padding: 50px;
         }
-
         #container p {
             font-size: 48px;
             font-family: sans-serif;
@@ -24,15 +21,10 @@
         }
     </style>
 </head>
-
 <body>
-    <div id="container">
-
-    </div>
-
+    <div id="container"></div>
     <script type="text/babel">
         var destination = document.querySelector("#container");
-
         var swatchComponent1 = "#58B3FF";
         var swatchComponent2 = "#FF605F";
         var swatchComponent3 = "#FFD52E";
@@ -64,8 +56,7 @@
                     <div style={squareStyle}></div>
                 );
             }
-        }
-                
+        }   
         
         class Card extends React.Component {
             render() {
@@ -116,5 +107,4 @@
         );
     </script>
 </body>
-
 </html>

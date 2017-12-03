@@ -19,7 +19,7 @@ class Layout extends React.Component {
           <div className={s.ribbon}>
             <Header />
             <div className={s.container}>
-              <h1 className={`mdl-typography--title ${s.tagline}`}>ASP.NET Core Starter Kit</h1>
+              <h1 className={`mdl-typography--title ${s.tagline}`}>Maki Roggers Portfolio</h1>
               <p className={`mdl-typography--body-1 ${s.summary}`}>
                 Single-page application boilerplate powered by .NET Core and React
               </p>

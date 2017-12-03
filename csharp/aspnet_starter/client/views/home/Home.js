@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
 
-const title = 'ASP.NET Core Starter Kit';
+const title = 'Maki Roggers Portfolio';
 const link = 'https://github.com/makiroggers/dojo-week15';
 
 class Home extends React.Component {

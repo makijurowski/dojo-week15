@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  web:
+    image: cguo/express-webpack-react-redux-typescript-boilerplate
+    build:
+      context: .
+    ports:
+      - "3003:3003"
+    depends_on:
+      - postgres
+      - redis
+    restart: always
+
+  postgres:
+    image: postgres:9.5-alpine
+    volumes:
+      - ./backend/sql/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./backend/sql/data.sql:/docker-entrypoint-initdb.d/2-data.sql
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5433"
+    restart: always
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    restart: always

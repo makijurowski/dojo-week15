@@ -348,3 +348,5 @@ yarn-error.log*
 
 */*/*/tasks.json
 */*/*/*/tasks.json
+csharp/package-lock.json
+csharp/react_redux_aspnetcore/webpack-boilplate

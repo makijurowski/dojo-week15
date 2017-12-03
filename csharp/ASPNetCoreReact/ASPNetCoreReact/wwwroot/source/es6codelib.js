@@ -2,9 +2,9 @@
 
 constructor() {
   this.text = "Data from ES6 class";
-}
+ }
 
 getData() {
      return this.text;
-    }
+   }
 }

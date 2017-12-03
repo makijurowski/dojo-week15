@@ -65,14 +65,23 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-﻿$ = __webpack_require__(1);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__es6codelib__ = __webpack_require__(3);
+﻿/* $ = require('jquery'); */
 __webpack_require__(2); 
+
 
 document.getElementById("fillthis").innerHTML = getText();
 
 $('#fillthiswithjquery').html('Filled by Jquery!');
+
+let myES6Object = new __WEBPACK_IMPORTED_MODULE_0__es6codelib__["a" /* default */]();
+
+$('#fillthiswithes6lib').html(myES6Object.getData());
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
 /* 1 */
@@ -10341,6 +10350,25 @@ return jQuery;
 ﻿getText = function () {
     return "Data from getText function in dep.js";
 }
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+﻿class ES6Lib {
+
+constructor() {
+  this.text = "Data from ES6 class";
+}
+
+getData() {
+     return this.text;
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = ES6Lib;
+
 
 
 /***/ })

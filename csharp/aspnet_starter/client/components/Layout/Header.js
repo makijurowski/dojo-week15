@@ -22,7 +22,7 @@ class Header extends React.Component {
       >
         <div className={`mdl-layout__header-row ${s.headerRow}`}>
           <Link className="mdl-layout-title" to="/">
-            <Logo height={48} />
+            <Logo />
           </Link>
           <div className="mdl-layout-spacer" />
           <Navigation />

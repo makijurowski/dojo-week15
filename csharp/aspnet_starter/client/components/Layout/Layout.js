@@ -21,7 +21,7 @@ class Layout extends React.Component {
             <div className={s.container}>
               <h1 className={`mdl-typography--title ${s.tagline}`}>Maki Roggers Portfolio</h1>
               <p className={`mdl-typography--body-1 ${s.summary}`}>
-                Single-page application boilerplate powered by .NET Core and React
+                Apprenti Software Development Apprentice at Microsoft
               </p>
             </div>
           </div>

@@ -350,3 +350,4 @@ yarn-error.log*
 */*/*/*/tasks.json
 csharp/package-lock.json
 csharp/react_redux_aspnetcore/webpack-boilplate
+csharp/aspnet_starter/docs

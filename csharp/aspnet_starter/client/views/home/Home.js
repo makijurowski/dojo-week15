@@ -1,17 +1,8 @@
-/**
- * ASP.NET Core Starter Kit (https://dotnetreact.com)
- *
- * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
 
 const title = 'ASP.NET Core Starter Kit';
-const link = 'https://github.com/kriasoft/aspnet-starter-kit';
+const link = 'https://github.com/makiroggers/dojo-week15';
 
 class Home extends React.Component {
 

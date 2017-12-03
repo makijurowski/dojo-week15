@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { ApplicationState }  from '../store';
 import * as CounterStore from '../store/Counter';
 import * as WeatherForecasts from '../store/WeatherForecasts';
+import { Button, Icon } from "../../node_modules/react-materialize";
 
 type CounterProps =
     CounterStore.CounterState

@@ -10,6 +10,7 @@
     "@progress/kendo-buttons-react-wrapper": "^2017.3.1124",
     "@progress/kendo-data-query": "^1.1.2",
     "@progress/kendo-dateinputs-react-wrapper": "^2017.3.1124",
+    "@progress/kendo-grid-react-wrapper": "^2017.3.1124",
     "@progress/kendo-inputs-react-wrapper": "^2017.3.1124",
     "@progress/kendo-layout-react-wrapper": "^2017.3.1124",
     "@progress/kendo-popups-react-wrapper": "^2017.3.1124",

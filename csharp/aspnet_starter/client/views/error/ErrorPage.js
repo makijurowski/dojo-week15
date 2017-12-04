@@ -33,7 +33,7 @@ class ErrorPage extends React.Component {
           <h1 className={s.code}>{code}</h1>
           <p className={s.title}>{title}</p>
           {code === '404' && <p className={s.text}>
-            The page you're looking for does not exist or an another error occurred.
+            The page you are looking for does not exist or an another error occurred.
           </p>}
           <p className={s.text}>
             <a href="/" onClick={this.goBack}>Go back</a>, or head over to the&nbsp;

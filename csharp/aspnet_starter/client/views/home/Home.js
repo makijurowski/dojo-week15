@@ -1,13 +1,12 @@
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
-
 const title = 'Maki Roggers Portfolio';
 const link = 'https://makiroggers.com';
 
 class Home extends React.Component {
 
   static propTypes = {
-    articles: PropTypes.arrayOf.isRequired,
+    articles: PropTypes.array.isRequired,
   };
 
   componentDidMount() {

@@ -17,6 +17,18 @@
     "view": "./views/about"
   },
   {
+    "path": "/templates/dashboard",
+    "view":"./components/KendoUI/apptemplates/dashboard/index.html"
+  },
+  {
+    "path": "/templates/grid-menu",
+    "view":"./components/KendoUI/apptemplates/grid-and-menu/index.html"
+  },
+  {
+    "path": "/templates/navigation",
+    "view":"./components/KendoUI/apptemplates/navigation/index.html"
+  },
+  {
     "path": "/tasks/:status(pending|completed)?",
     "view": "./views/home"
   }

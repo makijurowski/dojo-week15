@@ -19,9 +19,9 @@
     "useCache": true
   },
   "include": [
-    "./src",
-    "./js",
-    "./styles"
+    "./src/",
+    "./js/",
+    "./styles/"
   ],
   "exclude": [
     "../../node_modules"

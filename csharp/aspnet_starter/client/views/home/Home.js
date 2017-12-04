@@ -7,9 +7,8 @@ const link1 = 'https://makiroggers.com';
 const link2 = 'https://github.com/makiroggers';
 
 class Home extends React.Component {
-
   static propTypes = {
-    articles: PropTypes.arrayOf.isRequired,
+    articles: PropTypes.any.isRequired,
   };
 
   componentDidMount() {
@@ -23,7 +22,7 @@ class Home extends React.Component {
           <div className="mdl-cell mdl-cell--6-col">
             <h1 className="mdl-typography--title">Welcome to {title}!</h1>
             <p className="mdl-typography--body-1">
-              For more information visit <a href={link1}>{link1}</a> or <a href={link2}>{link2}</a>
+              For more information visit <a href={link1}>{link1}</a> or <a href={link2}>{link2}</a>.
             </p>
           </div>
           <div className="mdl-cell mdl-cell--6-col">
@@ -42,9 +41,9 @@ class Home extends React.Component {
                           {product.title}
                         </a> [{product.author}]
                       </span>
-                      </li>)}
+                    </li>)}
                   </ul>
-                </li>)}
+              </li>)}
             </ul>
             <p />
           </div>

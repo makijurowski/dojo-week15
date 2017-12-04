@@ -24,7 +24,7 @@ project.lock.json
 # Sensitive data
 appsettings.*.json
 */appsettings.json
-client/components/KendoUI/*
-js/*
-src/*
-styles/*
+client/components/kendoui/src
+client/components/kendoui/styles
+client/components/kendoui/js
+client/components/kendoui/examples
